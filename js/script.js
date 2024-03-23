@@ -11,8 +11,7 @@ function showImage(){
 
     var note = document.getElementById('note');
 
-    document.getElementById('audioplayer').muted = true;
-    document.getElementById('audioplayer').muted = false;
+    document.getElementById('audioplayer').autoplay = true;
     document.getElementById('audioplayer').play();
 
     images1.hidden = true;
