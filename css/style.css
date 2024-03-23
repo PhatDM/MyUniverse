@@ -73,6 +73,10 @@ option {
     margin-top: 10px;
 }
 
+#audioplayer{
+    display:none;
+}
+
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
@@ -89,5 +93,9 @@ option {
     .images-result{
         margin-top: 10%;
         width: 80%;
+    }
+
+    #audioplayer{
+        display:inline;
     }
 }
