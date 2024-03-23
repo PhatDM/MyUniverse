@@ -11,7 +11,8 @@ function showImage(){
 
     var note = document.getElementById('note');
 
-    document.getElementById('audioplayer').autoplay = true;
+    document.getElementById('audioplayer').muted = true;
+    document.getElementById('audioplayer').muted = false;
     document.getElementById('audioplayer').play();
 
     images1.hidden = true;
@@ -27,22 +28,22 @@ function showImage(){
             images.src = "./images/";
             break;
         case 'country':
-            images.src = window.location.href + "/images/vietnam.jpg";
+            images.src = window.location.pathname == "/MyUniverse/" ? window.location.href + "/images/earth.jpg" : "./images/vietnam.jpg";
             break;
         case 'planet':
-            images.src =  window.location.href + "/images/earth.jpg";
+            images.src =  window.location.pathname == "/MyUniverse/" ? window.location.href + "/images/earth.jpg" : "/images/earth.jpg";
             break;
         case 'moon':
-            images.src =  window.location.href + "/images/moon.jpg";
+            images.src =  window.location.pathname == "/MyUniverse/" ? window.location.href + "/images/earth.jpg" : "/images/moon.jpg";
             break;
         case 'sun':
-            images.src =  window.location.href + "/images/sun.jpg";
+            images.src =  window.location.pathname == "/MyUniverse/" ? window.location.href + "/images/earth.jpg" : "/images/sun.jpg";
             break;
         case 'milkyway':
-            images.src =  window.location.href + "/images/milkyway.jpg";
+            images.src =  window.location.pathname == "/MyUniverse/" ? window.location.href + "/images/earth.jpg" : "/images/milkyway.jpg";
             break;
         case 'universe':
-            images.src =  window.location.href + "/images/universe1.jpg";
+            images.src =  window.location.pathname == "/MyUniverse/" ? window.location.href + "/images/earth.jpg" : "/images/universe1.jpg";
             images1.hidden = false;
             images2.hidden = false;
             images3.hidden = false;
