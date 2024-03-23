@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Universe - 23/02</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>And These Are ...</h1>
+        <select name="options" id="options" onchange="showImage()">
+            <option id="option-1" value="-" selected>-----</option>
+            <option value="country">My Country</option>
+            <option value="planet">My Planet</option>
+            <option value="moon">My Moon</option>
+            <option value="sun">My Sun</option>
+            <option value="milkyway">My Milkyway</option>
+            <option value="universe">My Universe</option>
+        </select>
+        <div class="images-result">
+            <img id="image-display" src="" alt="">
+            <img id="image-display1" src="./images/universe2.jpg" alt="" hidden>
+            <img id="image-display2" src="./images/universe3.jpg" alt="" hidden>
+            <img id="image-display3" src="./images/universe4.jpg" alt="" hidden>
+            <img id="image-display4" src="./images/universe5.jpg" alt="" hidden>
+            <img id="image-display5" src="./images/universe6.jpg" alt="" hidden>
+            <img id="image-display6" src="./images/universe7.jpg" alt="" hidden>
+        </div>
+
+        <p id="note" hidden>Mừng Anniversary của chúng ta nhé em! Em sẽ luôn là em bé - cô vợ nóng tính của anh! Anh yêu em bằng tất cả con tim này! Em sẽ làm vợ của anh nhé!!<i class="fa-solid fa-heart"></i> </p>
+
+        <audio hidden id="audioplayer" src="./audio/viemdalau-short.mp3" type="audio/mpeg" controls autoplay loop></audio>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
