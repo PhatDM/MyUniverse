@@ -28,22 +28,22 @@ function showImage(){
             images.src = "./images/";
             break;
         case 'country':
-            images.src = "./images/vietnam.jpg";
+            images.src = window.location.href + "/images/vietnam.jpg";
             break;
         case 'planet':
-            images.src = "./images/earth.jpg";
+            images.src =  window.location.href + "/images/earth.jpg";
             break;
         case 'moon':
-            images.src = "./images/moon.jpg";
+            images.src =  window.location.href + "/images/moon.jpg";
             break;
         case 'sun':
-            images.src = "./images/sun.jpg";
+            images.src =  window.location.href + "/images/sun.jpg";
             break;
         case 'milkyway':
-            images.src = "./images/milkyway.jpg";
+            images.src =  window.location.href + "/images/milkyway.jpg";
             break;
         case 'universe':
-            images.src = "./images/universe1.jpg";
+            images.src =  window.location.href + "/images/universe1.jpg";
             images1.hidden = false;
             images2.hidden = false;
             images3.hidden = false;
